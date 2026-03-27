@@ -1,4 +1,4 @@
-import { Mail, Linkedin, MapPin, ArrowUpRight } from 'lucide-react';
+import { Mail, Linkedin, ArrowUpRight } from 'lucide-react';
 
 export default function Contact() {
   return (
