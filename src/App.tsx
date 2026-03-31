@@ -4,6 +4,7 @@ import Problem from './components/Problem';
 import Solution from './components/Solution';
 import SystemFlow from './components/SystemFlow';
 import Projects from './components/Projects';
+import Creatives from './components/Creatives';
 import VideoDemo from './components/VideoDemo';
 import WhoThisIsFor from './components/WhoThisIsFor';
 import About from './components/About';
@@ -21,6 +22,7 @@ function App() {
         <Solution />
         <SystemFlow />
         <Projects />
+        <Creatives />
         <VideoDemo />
         <WhoThisIsFor />
         <About />

@@ -14,10 +14,10 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { name: 'The Bridge', href: '#approach' },
-    { name: 'Proof', href: '#testimonials' },
-    { name: 'Work', href: '#automations' },
+    { name: 'Approach', href: '#approach' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Creatives', href: '#creatives' },
+    { name: 'About', href: '#about' },
     { name: 'Why Me', href: '#why' },
   ];
 
