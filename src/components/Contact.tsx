@@ -1,6 +1,14 @@
+import { useState } from 'react';
 import { Mail, Linkedin, ArrowUpRight } from 'lucide-react';
+import { AdminSidebar, useFooterTap } from '../admin/AdminSidebar';
+import { useAdmin } from '../admin/AdminContext';
 
 export default function Contact() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const { isEditorMode } = useAdmin();
+  const handleFooterTap = useFooterTap(() => {
+    if (!isEditorMode) setSidebarOpen(true);
+  });
   return (
     <>
       <section id="contact" className="py-24">
@@ -76,7 +84,10 @@ export default function Contact() {
       {/* Footer */}
       <footer className="border-t border-slate-800/60 bg-[#020617] py-8">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-slate-500 text-sm">
+          <p
+            className="text-slate-500 text-sm select-none cursor-default"
+            onClick={handleFooterTap}
+          >
             © {new Date().getFullYear()} Jeremiah Ragay. All rights reserved.
           </p>
           <div className="flex gap-8">
@@ -85,6 +96,7 @@ export default function Contact() {
           </div>
         </div>
       </footer>
+      <AdminSidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
     </>
   );
 }
