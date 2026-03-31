@@ -8,11 +8,11 @@ export default function Creatives() {
       title: "Conversion-Driven Ad Creatives",
       description: "Strategic visual assets built for high-performance paid social and search campaigns.",
       items: [
-        { src: "/src/assets/creatives/1.png", alt: "Ad Creative 1" },
-        { src: "/src/assets/creatives/2.png", alt: "Ad Creative 2" },
-        { src: "/src/assets/creatives/creatives image 1.png", alt: "Ad Creative 3" },
-        { src: "/src/assets/creatives/creatives image 2.png", alt: "Ad Creative 4" },
-        { src: "/src/assets/creatives/creatives image 3.png", alt: "Ad Creative 5" }
+        { src: "/creatives/1.png", alt: "Ad Creative 1" },
+        { src: "/creatives/2.png", alt: "Ad Creative 2" },
+        { src: "/creatives/creatives image 1.png", alt: "Ad Creative 3" },
+        { src: "/creatives/creatives image 2.png", alt: "Ad Creative 4" },
+        { src: "/creatives/creatives image 3.png", alt: "Ad Creative 5" }
       ]
     },
     {
@@ -20,10 +20,10 @@ export default function Creatives() {
       title: "Web Design & Solutions",
       description: "Clean, conversion-optimized website mockups designed to scale businesses.",
       items: [
-        { src: "/src/assets/creatives/Website Created 1.png", alt: "Web Design 1" },
-        { src: "/src/assets/creatives/Website Created 2.png", alt: "Web Design 2" },
-        { src: "/src/assets/creatives/Website Created 3.png", alt: "Web Design 3" },
-        { src: "/src/assets/creatives/Website Created 4.png", alt: "Web Design 4" }
+        { src: "/creatives/Website Created 1.png", alt: "Web Design 1" },
+        { src: "/creatives/Website Created 2.png", alt: "Web Design 2" },
+        { src: "/creatives/Website Created 3.png", alt: "Web Design 3" },
+        { src: "/creatives/Website Created 4.png", alt: "Web Design 4" }
       ]
     }
   ];
