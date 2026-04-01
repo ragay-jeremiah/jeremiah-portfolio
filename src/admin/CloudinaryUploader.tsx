@@ -4,8 +4,8 @@ import { Upload, X, CheckCircle, Loader2, AlertCircle } from 'lucide-react';
 import { useAdmin } from './AdminContext';
 import type { CreativeImage } from './AdminContext';
 
-const CLOUD_NAME = 'dvbgohxka';
-const UPLOAD_PRESET = 'portfolio_uploads'; // Change this to your unsigned upload preset name
+const CLOUD_NAME = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'dvbgohxka';
+const UPLOAD_PRESET = import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET || 'portfolio_uploads';
 
 interface CloudinaryUploaderProps {
   category: 'ad-creatives' | 'web-designs';
